@@ -1,6 +1,8 @@
 name: Auto Build csi-driver-nfs (Self hosted)
 
 on:
+  schedule:
+    - cron: '25 3 * * *'
   workflow_dispatch:
 
 env:
